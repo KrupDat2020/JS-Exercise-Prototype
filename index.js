@@ -94,8 +94,8 @@ function Airplane(name) {
    this.age = age;
    this.favoriteToy = favoriteToy;
    Person.prototype.play = function (){
-     return `Playing with ${favoriteToy}`;
-   }
+     return `Playing with ${favoriteToy}`
+   };
   }
  
   
