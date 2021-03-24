@@ -93,16 +93,19 @@ function Airplane(name) {
    this.name = name;
    this.age = age;
    this.favoriteToy = favoriteToy;
+   Person.prototype.play = function (){
+     return `Playing with ${favoriteToy}`;
+   }
   }
  
   
   /* 
     TASK 4
     In your own words explain the four principles for the "this" keyword below:
-    1. 
-    2. 
-    3. 
-    4. 
+    1. Using the keyword 'new' when calling a function creates 'this' as a brand new object.
+    2. If you use 'apply', 'call', or 'bind' to call a function, 'this' is the object passed in as the argument.
+    3. If you call a function as a 'method', 'this' is the object that the function is a property of.
+    4. Otherwise, 'this' is the Global Object.
   */
   
   
