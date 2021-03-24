@@ -73,8 +73,12 @@ function Airplane(name) {
           + The `drive` method should return a string "I ran out of fuel at x miles!" x being `odometer`.
   */
   
- function Car() {
-    
+ function Car(model, milesPerGallon) {
+    this.tank = tank;
+    this.odometer = odometer;
+    Car.prototype.fill = function(gallons) {
+      console.log(Car);
+    }
   }
   
   
@@ -85,8 +89,10 @@ function Airplane(name) {
       - Besides the methods on Person.prototype, babies have the ability to `.play()`:
           + Should return a string "Playing with x", x being the favorite toy.
   */
- function Baby() {
-   
+ function Baby(name, age, favoriteToy) {
+   this.name = name;
+   this.age = age;
+   this.favoriteToy = favoriteToy;
   }
  
   
